@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <div class="head">
+        <h2>Create your new account</h2>
+    </div>
+   <center>
+    <div class="content">
+        <div class="logo">
+            <div class="img"><img src="img/icons8-male-user-48.png" alt="username"></div>
+            <div class="img"><img src="img/icons8-gmail-48.png" alt="gmail"></div>
+            <div class="img"><img src="img/icons8-sign-in-form-password-48.png" alt="password"></div>
+            <div class="img"><img src="img/icons8-call-64.png" alt="call"></div>
+            <div class="img"><img src="img/unisex.png" alt="gender"></div>
+            <div class="img"><img src="img/icons8-college-48.png" alt="College"></div>
+        </div>
+        <div class="details">
+            <form  action="php/signin.php" method="post">
+            <div class="deta">
+                <input type="text" name="name" placeholder="Fullname">
+            </div>
+            <div class="deta">
+                <input type="text" name="email" placeholder="Ex:abc123@gmail.com">
+            </div>
+            <div class="deta">
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="deta">
+                <input type="number" name="number" placeholder="Contact No">
+            </div>
+            <div class="deta">
+                <input type="text" name="gender" placeholder="Gender">
+            </div>
+            <div class="deta">
+                <input type="text" name="clg_name" placeholder="College Name">
+            </div>
+            <div class="button">
+                <input type="submit" name="submit" value="submit">
+            </div>
+            <div class="some">
+                <p>Already have an account? <a href="login.html">Login in</a></p>
+            </div>
+        </form>
+        </div>
+    </div>
+   </center> 
+</body>
+</html>

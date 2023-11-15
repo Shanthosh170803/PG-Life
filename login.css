@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.head{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25px;
+}.content{
+    width: 40%;
+    height: 250px;
+    border: 2px;
+    display: flex;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+.content>.logo{
+    width: 14%;
+    height: 450px;
+    border: 20px ;
+    align-items: start;
+    display: inline;
+}
+.content>.details{
+    width: 100%;
+    height: 450px;
+    border:2px;
+    align-items: start;
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content>.logo>.img{
+    width: 100%;
+    height: 15%;
+    border: 2px;
+}
+.content>.logo>.img>img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.content>.details>.deta{
+    width: 100%;
+    height: 15%;
+    border: 2px ;
+}
+.content>.details>.deta>input{
+    width: 95%;
+    height: 80%;
+    padding:5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+.content>.details>.button>input{
+    width: 100px;
+    height: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    border-radius: 9px;
+    border-color:whitesmoke;
+    background-color:#20639B;
+    color:white;
+    outline: none;
+    margin-left: 400px;
+}
+.content>.details>.button>input:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:#20639B;
+    color:white;
+    border-color: whitesmoke;
+    outline: none;
+}
+.content>.details>.some{
+    margin-right:100px ;
+    margin-top: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

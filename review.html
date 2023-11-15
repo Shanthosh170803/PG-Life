@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .reviews-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .review {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #ccc;
+        }
+
+        .user-review-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .rating label:before {
+            content: '\2605';
+            font-size: 24px;
+            color: #ccc;
+        }
+
+        .rating input:checked ~ label:before {
+            color: #f39c12;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Reviews</h1>
+    <div class="reviews-container">
+        <div class="review">
+            <div class="profile-image"></div>
+            <p><strong>Ramesh:</strong> The room service was prompt, and the staff was courteous,and mainly
+             Excellent service! Always had a steady supply of clean water. </p><br>
+                <p>Rating: ★★★★★</p>
+        </div>
+        <div class="review">
+            <div class="profile-image"></div>
+            <p><strong>Sasi:</strong> Comfortable stay with reasonable room rent.
+            The electricity was reliable, and there were no disruptions during my stay. worth for money</p>
+            <span class="rating">Rating: ★★★★☆</span></p>
+        </div>
+        <div class="review">
+            <div class="profile-image"></div>
+            <p><strong>Dhanalakshmi:</strong> I faced no issues with water or electricity during my stay.
+         Affordable pricing for the quality of the room and services provided.</p>
+            <span class="rating">Rating: ★★★★★</span>
+        </div>
+    </div>
+    <div class="user-review-container">
+        <h2>Add Your Review</h2>
+        <form>
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <label for="rating">Your Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"></label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"></label>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</body>
+</html>

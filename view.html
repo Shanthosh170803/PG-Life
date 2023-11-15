@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Photos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .photos-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .photo {
+            width: 100%; 
+            max-width: 100%; 
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Room Photos</h1>
+    <div class="photos-container">
+        <div class="photo">
+            <img src="img/properties/2/1dcfc57947b5c712.jpg" alt="Room 1" style="width: 100%;">
+        </div>
+        <div class="photo">
+            <img src="img/properties/1/46ebbb537aa9fb0a.jpg" alt="Room 2" style="width: 100%;">
+        </div>
+        <div class="photo">
+            <img src="img/properties/1/eace7b9114fd6046.jpg" alt="Room 3" style="width: 100%;">
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+</body>
+</html>
